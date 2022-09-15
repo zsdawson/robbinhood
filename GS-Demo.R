@@ -17,10 +17,10 @@ gs4_auth(
 )
 
 
-# # gs4_find()#lists all 
-# gs4_find(order_by =
-#         "createdTime desc", n_max = 11
-#         ) # lists 11 most recently created sheets
+gs4_find()#lists all 
+gs4_find(order_by =
+         "createdTime desc", n_max = 11
+         ) # lists 11 most recently created sheets
 
 
 # use this to get the id for the sheets file once you see the pattern you can 
@@ -29,7 +29,7 @@ gs4_auth(
 # to demo this id gram something simple that you know well in your drive i used 
 #the iris data set
 as_id("https://docs.google.com/spreadsheets/d/1GRvYRDtzcDH50JP1VEH7x29uzO5Y2-Cy0FOtGN_visA/edit#gid=750754761")
-# 1GRvYRDtzcDH50JP1VEH7x29uzO5Y2-Cy0FOtGN_visA
+ # 1GRvYRDtzcDH50JP1VEH7x29uzO5Y2-Cy0FOtGN_visA
 
 
 # imports first row as col names so take that in to thought while formatting sheets 
