@@ -12,6 +12,7 @@ library(googlesheets4)
 
 
    # Define UI
+   # all of this part will be the buttons but no logic
 ui <- fluidPage(theme = shinytheme("superhero"),#for light ui use theme "journal"
                 navbarPage(
                 
@@ -59,6 +60,7 @@ ui <- fluidPage(theme = shinytheme("superhero"),#for light ui use theme "journal
 
 
 # Define server function  
+# logic section the ui is under the previous. 
 server <- function(input, output) {
   
   output$value <- renderText({ input$caption })
@@ -81,19 +83,12 @@ server <- function(input, output) {
   })
   
   
-
-  # observeEvent(input$get_tables, {
-  #    x <- gs4_find()
-  # })
-  
-  
   observeEvent(input$show_graph, {
     output$dto <- renderDataTable({x})
     y <- c(1,2,2,3)
   })
   
-  # output$dto <- renderDataTable({x})
-  #output$to <- renderTable(dat)
+
 } # server
 
 
