@@ -31,7 +31,7 @@ ui <- fluidPage(theme = shinytheme("superhero"),#for light ui use theme "journal
                            mainPanel(
                              h1("zachs discount web services"),
                              
-                             h4("weeeeeeee"),
+                             h4("test"),
                              verbatimTextOutput("txtout"),
                              
                            ) # mainPanel
@@ -45,9 +45,9 @@ ui <- fluidPage(theme = shinytheme("superhero"),#for light ui use theme "journal
                             
                            ), # sidebarPanel
                            mainPanel(
-                             h1("hey"),
+                             h1("test2"),
                              
-                             h4("no thx"),
+                             h4("test3"),
                              verbatimTextOutput("txtout"),
                              
                            ) # mainPanel
